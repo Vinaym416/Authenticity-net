@@ -20,7 +20,7 @@ model = load_model(model_path)
 
 if uploaded_file:
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
 
     if st.button("Predict"):
         with st.spinner("Analyzing..."):
